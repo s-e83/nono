@@ -68,6 +68,7 @@ body {
 }
 
 .slide {
+  position: relative;
   width: 100%;
   height: 100vh;
   overflow: hidden;
@@ -75,6 +76,25 @@ body {
   justify-content: center;
   align-items: center;
   grid-template-columns: repeat(2, 1fr);
+}
+
+.slide .heart {
+  position: absolute;
+  width: 130px;
+  transform: translate(-50%, -50%);
+  top: 20%;
+  left: 10%;
+}
+
+.slide-7 .heart,
+.slide-5 .heart,
+.slide-3 .heart,
+.slide-1 .heart {
+  position: absolute;
+  width: 130px;
+  transform: translate(-50%, -50%);
+  top: 20%;
+  left: 90%;
 }
 
 .img {

@@ -63,6 +63,7 @@ body {
 }
 
 .video img {
+  height: 100%;
   width: 100%;
 }
 

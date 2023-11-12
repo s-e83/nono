@@ -6,6 +6,14 @@ anime({
   delay: 0,
   direction: "alternate",
   loop: false,
+  complete: function (anim) {
+    // عند انتهاء التحريك
+    var paths = document.querySelectorAll("#Layer_1 path");
+    for (var i = 0; i < paths.length; i++) {
+      paths[i].style.fill = "#fff"; // قم بتغيير لون كل مسار
+      paths[i].style.transition = "0.5s";
+    }
+  },
 });
 
 // --------- Animations //
